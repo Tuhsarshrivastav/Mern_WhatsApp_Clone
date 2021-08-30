@@ -1,10 +1,8 @@
 import mongoose from "mongoose";
 
 const Connection = async () => {
-  const URL =
-    "mongodb+srv://mern:mern@cluster0.ee1ui.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
   try {
-    await mongoose.connect(URL, {
+    await mongoose.connect({
       useUnifiedTopology: true,
       useNewUrlParser: true,
       useFindAndModify: false,
