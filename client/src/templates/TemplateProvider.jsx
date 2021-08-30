@@ -1,5 +1,4 @@
 import React from 'react';
-import { CssBaseline } from "@material-ui/core";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 const TemplateContext = React.createContext(null);

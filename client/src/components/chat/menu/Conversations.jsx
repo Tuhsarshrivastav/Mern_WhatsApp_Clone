@@ -43,7 +43,7 @@ const Conversations = ({ text }) => {
     return (
         <Box className={classes.component}>
             {
-                users && users.map((user, index) => (
+                users && users?.map((user, index) => (
                     user.googleId !== account.googleId && 
                         <>
                             <Conversation user={user} />
